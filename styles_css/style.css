@@ -15,14 +15,14 @@
     height: 100vh;
     border: solid rgb(158, 204, 219) 5px;
     display: grid;
-    grid-template-rows: 15% 75% 10%;
+    grid-template-rows: 10% 80% 10%;
     gap: 0.5rem;
 }
 
 .container > .main-container{
     background-color: rgb(225, 229, 231);
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 15% 85%;
     grid-template-rows: 33.33% 33.33% 33.33%;
     grid-template-areas: 
     "sidebar section"
@@ -34,6 +34,8 @@
 .main-container > .side-bar {
     background-color: rgb(228, 12, 23);
     grid-area: sidebar;
+    align-items: center;
+    justify-self: center;
 }
 
 .main-container > .menu-parts {
@@ -47,6 +49,11 @@
 
 .menu-parts > .sidebar {
     background-color: rgba(225, 230, 235, 0.925);
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "sidebar1"
+    ;
  }
 
 .main-container > .container-parts {
@@ -81,4 +88,18 @@
 .boton:hover{
     color: yellowgreen;
     boder: 3px;
+}
+
+h1.nameEmpresa{
+    color:rgb(20, 4, 110);
+    font-family: calibri;
+}
+
+h2,h3,h4{
+    color: rgb(20, 4, 110);
+    font-family: calibri;
+}
+
+p{
+    font-family: calibri;
 }
