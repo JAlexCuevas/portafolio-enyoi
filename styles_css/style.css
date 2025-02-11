@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: rgba(235, 236, 236, 0.932);
+}
+
+.container > header {
+    background-color: azure;
+    justify-self: center;
+    align-self: center;
+}
+.container {
+    width: 97vw;
+    height: 100vh;
+    border: solid rgb(158, 204, 219) 5px;
+    display: grid;
+    grid-template-rows: 15% 75% 10%;
+    gap: 0.5rem;
+}
+
+.container > .main-container{
+    background-color: rgb(225, 229, 231);
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-template-areas: 
+    "sidebar section"
+    "sidebar section"
+    "sidebar section"
+    ;
+}
+
+.main-container > .side-bar {
+    background-color: rgb(228, 12, 23);
+    grid-area: sidebar;
+}
+
+.main-container > .menu-parts {
+    background-color: rgb(225, 229, 231);
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    justify-self: center;
+}
+
+.menu-parts > .sidebar {
+    background-color: rgba(225, 230, 235, 0.925);
+ }
+
+.main-container > .container-parts {
+    background-color: bisque;
+    grid-area: section;
+    display: grid;
+    grid-template-rows: repeat(3fr, 33.33%);
+}
+
+.container-parts > section {
+    background-color: rgb(220, 223, 231);
+    border: solid 1px gray;
+}
+
+.container > footer {
+    background-color: azure;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.boton{
+    border:2px;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(20, 4, 110);
+}
+
+.boton:hover{
+    color: yellowgreen;
+    boder: 3px;
+}
